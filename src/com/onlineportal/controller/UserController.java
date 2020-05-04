@@ -12,10 +12,12 @@ public class UserController {
 		UserService user = new UserServiceImpl();
 	return user.getAllUserDetails();
 	}
+	
 	public int addNewUser(UserVO vo) {
 		UserService user = new UserServiceImpl();
 		return user.addNewUser(vo);
 	}
+	
 	public int deleteUser(int id) {
 		UserService user = new UserServiceImpl();
 		return user.deleteUser(id);

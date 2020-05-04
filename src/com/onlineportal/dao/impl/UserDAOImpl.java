@@ -13,8 +13,9 @@ import com.onlineportal.vo.UserVO;
 public class UserDAOImpl implements UserDAO {
 
 	@Override
-	public List<UserVO> getAllUserDetails() {
+	public List<UserVO> getAllUserDetails() {//get user details
 		// TODO Auto-generated method stub
+		
 		Connection con = getConnection();
 		String sql = "select * from user";
 		List<UserVO> ls = new ArrayList<UserVO>();
@@ -33,6 +34,7 @@ public class UserDAOImpl implements UserDAO {
 	}
 	
 	public int addNewUser(UserVO vo) {
+		
 		Connection con = getConnection();
 		String sql_insert = "INSERT INTO USER (id, LastName, FirstName) VALUES (?,?,?)";
 		int rows = 0;

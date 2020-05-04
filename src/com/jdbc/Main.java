@@ -14,12 +14,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		//Enter value
 		 Scanner scan = new Scanner(System.in);
 		 System.out.println("Enter 0 - insert, 1- delete and press any for seeing rows");
 		 int num = scan.nextInt();
- 
-    	
     	 switch(num) {
     	 case 0:{  // insertion
     		 System.out.println("Enter id:");
